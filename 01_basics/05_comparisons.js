@@ -23,6 +23,6 @@ console.log(undefined >= 0);  //false
 
 //  Undefined always gives false to every type conversion
 
-console.log("2"==2)     //true
+console.log("2"===2)     //false
 
-//Strict check
+//Strict check : It checks the value as well as string
