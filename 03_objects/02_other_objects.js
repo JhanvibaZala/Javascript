@@ -89,7 +89,7 @@ console.log(Object.entries(regularUser));
     [
         [ 'email', 'some@gmail.com' ],
         [ 'fullname', { userFullname: [Object] } 
-    ]
+    ] 
 ]
 */
 
