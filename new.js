@@ -5,7 +5,7 @@ const obj = {
     }
 };
 
-obj.greet();
+obj.greet();    //Abc
 
 const greetFunc = obj.greet;
 greetFunc();
