@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul>
+        <li class="language">Javascript</li>
+    </ul>
+</body>
+<script>
+    // traverses the whole damn list!!
+    function addLang2(lang) {
+        const li = document.createElement("li");
+        li.textContent = lang;
+        document.querySelector(".language").appendChild(li)
+    }
+    addLang2("python")
+    // optimistic
+    function addLang(lang) {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(lang));
+        document.querySelector(".language").appendChild(li)
+    }
+    addLang("Java");
+    addLang("HTML");
+    addLang("CSS");
+
+    // replace / edit
+    const childN = document.querySelector("li:nth-child(2)");
+    const newLi = document.createElement("li");
+    newLi.textContent = "mojo";
+    childN.replaceWith(newLi);
+    
+    // remove
+    const lastelt = document.querySelector(".language li:last-child");
+    lastelt.remove();
+</script>
+</html>

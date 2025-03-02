@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    document.body.style.backgroundColor = "black" 
+    document.body.style.color = "white" 
+
+    let myDiv1 = document.createElement("div1");
+    myDiv1.innerText = "Hello, I'm 1st div"
+    document.body.appendChild(myDiv1);
+
+    let myDiv2 = document.createElement("div");
+    myDiv2.id = Math.round(Math.random()*100+1)
+    console.log(myDiv2.id);
+    
+    myDiv2.innerText = "Hello, I'm 2nd div"
+    document.body.appendChild(myDiv2);
+    
+    
+    let myDiv3 = document.createElement("div");
+    myDiv3.innerText = "Hello, I'm 3rd div"
+    document.body.appendChild(myDiv3);
+
+    let elt = document.getElementById("50");
+    elt.remove();
+</script>
+</html>
