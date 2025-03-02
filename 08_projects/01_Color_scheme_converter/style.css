@@ -1,0 +1,53 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    border: 1px solid black ;
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#maroon {
+    background-color: maroon;
+}
+
+#green {
+    background-color: darkgreen;
+}
+
+#teal {
+    background-color: teal;
+}
+
+#pink {
+    background-color: thistle;
+}
+
+#reset-btn {
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
