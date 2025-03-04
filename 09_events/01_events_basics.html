@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul">
+        <li id="girl"><img width="100px" src="https://tse1.mm.bing.net/th?id=OIP.bsDAanViEmr1N7dIc8UYoAHaHa&pid=Api&P=0&h=180"></img></li>
+        <li id="mcd"><img src="https://tse2.mm.bing.net/th?id=OIP.bV-AnQnsIxc_IcZSJ68k9QHaE8&pid=Api&P=0&h=180"></img></li>
+        <li id="pig"><img src="https://tse3.mm.bing.net/th?id=OIP.RBeXsiliJ3p1HWrEL24skQHaEo&pid=Api&P=0&h=180"></img></li>
+        <li id="boy"><img src="https://tse3.mm.bing.net/th?id=OIP.YDyoIafIwW1tILED3HgZRQHaHa&pid=Api&P=0&h=180"></img></li>
+        <li> <a href="https://www.google.com">Google</a></li>
+    </ul>
+</body>
+<script>
+    
+    // document.getElementById('girl').addEventListener('click', function () {
+    //     console.log('you clicked girl')
+    // },true);
+
+    // document.getElementById('boy').addEventListener('click', function () {
+    //     console.log('you clicked boy')
+    // },true);
+
+    // document.getElementById('ul').addEventListener('click', function () {
+    //     console.log('you clicked list')
+    // },true);
+
+    // in case of true it will give list then girl or boy
+    // in case of false it will give girl or boy then list
+
+    // remove images
+    document.getElementById('ul').addEventListener('click', function (e) {
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    })
+    
+    
+    // document.getElementById('ul').addEventListener('click',setTimeout( function msg() {
+    //     alert("It's been 2 seconds you deleted the image")
+    // },2000))
+</script>
+</html>

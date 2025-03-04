@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="btn" style="cursor: pointer;" type="button" value="click!">
+</body>
+<script>
+    let btn = document.getElementById('btn')
+    
+    function showMsg () {
+        alert("Button clicked!")
+    }
+
+    btn.addEventListener('click', showMsg)
+
+    setTimeout( () => {
+        btn.removeEventListener('click',showMsg)
+        alert("Event removed")
+    },3000)
+    clearTimeout(timeOut)
+</script>
+</html>
