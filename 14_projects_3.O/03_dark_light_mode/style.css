@@ -1,0 +1,42 @@
+body {
+    margin: 3rem;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+button {
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+}
+
+#dark {
+    background-color: black;
+    color: white;
+}
+
+#light {
+    background-color: yellow;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+button.active {
+    border: 2px solid red;
+}
